@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="chat-container"></div>
+
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.5/libs/cn/index.js"></script>
+    <script>
+        // 保存SDK实例
+        const cozeWebSDK = new CozeWebSDK.WebChatClient({
+            config: {
+                bot_id: '7488262902731472915',
+            },
+            componentProps: {
+                title: '智能财税助手',
+            },
+            auth: {
+                type: 'token',
+                token: 'pat_Kue9l4yTsWSrTMNpa2ORgAeM3vad30S9fePAndiWjiJztZmXU9E8kdTe7FQgJv8K',//由于coze平台的密钥时间限制，这里每30天需要更新一次
+                onRefreshToken: function () {
+                    return 'pat_Kue9l4yTsWSrTMNpa2ORgAeM3vad30S9fePAndiWjiJztZmXU9E8kdTe7FQgJv8K'
+                }
+            },
+            ui: {
+                base: {
+                    layout: 'mobile', // 强制使用移动端布局
+                    zIndex: 9999      // 确保在最顶层
+                },
+                asstBtn: {  // 修正参数名拼写
+                    isNeed: false    // 完全隐藏悬浮球
+                },
+                header: {
+                    isNeedClose: false // 隐藏关闭按钮（可选）
+                },
+                footer:{
+                    expressionText: "内容由AI生成,请注意辨别!"
+                }
+            }
+        });
+
+        // 自动显示聊天窗口
+        cozeWebSDK.showChatBot();
+    </script>
+</body>
+</html>
