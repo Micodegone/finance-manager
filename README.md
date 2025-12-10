@@ -36,10 +36,10 @@ npm run lint
 
 ## 部分内容截图
 
-<img src="./src/assets/images/image.png" alt="image">
-<img src="./src/assets/images/image copy 2.png" alt="image">
-<img src="./src/assets/images/image copy 3.png" alt="image">
-<img src="./src/assets/images/image copy 4.png" alt="image">
-<img src="./src/assets/images/image copy 5.png" alt="image">
-<img src="./src/assets/images/image copy 6.png" alt="image">
-<img src="./src/assets/images/image copy 7.png" alt="image">
+![alt text](/src/assets/images/image.png)
+![alt text](/src/assets/images/imagecopy.png)
+![alt text](/src/assets/images/imagecopy2.png)
+![alt text](/src/assets/images/imagecopy3.png)
+![alt text](/src/assets/images/imagecopy4.png)
+![alt text](/src/assets/images/imagecopy5.png)
+![alt text](/src/assets/images/imagecopy6.png)
